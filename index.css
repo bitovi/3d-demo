@@ -1,0 +1,127 @@
+* {
+  font-family: sans-serif;
+}
+
+body {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+.header {
+  width: 100%;
+  height: 100%;
+  max-height: 575px;
+  border-bottom: 1px solid #000000;
+  position: relative;
+}
+
+.header h1 {
+  width: 40%;
+  font-size: 90px;
+  position: absolute;
+  left: 0px;
+  top: 40px;
+  text-align: center;
+  color: rebeccapurple;
+}
+
+canvas {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 50%;
+  height: 100%;
+}
+
+.spawn-model {
+  list-style: none;
+  position: absolute;
+  cursor: pointer;
+  top: 20px;
+  left: 20px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-shadow: 1px 0 0 #000000, 0 -1px 0 #000000, 0 1px 0 #000000, -1px 0 0 #000000;
+}
+
+.fps-display {
+  pointer-events: none;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-shadow: 1px 0 0 #000000, 0 -1px 0 #000000, 0 1px 0 #000000, -1px 0 0 #000000;
+}
+
+
+.car-listings {
+  display: flex;
+}
+
+.filters-container {
+  display: block;
+  width: 625px;
+}
+
+ul {
+  list-style: none;
+  margin: 2px;
+  padding: 2px;
+}
+
+fieldset {
+  border: none;
+}
+
+.car-list {
+  display: block;
+  width: 100%;
+}
+
+
+.car-list ul li > div > div {
+  position: relative;
+  border: 1px solid #000000;
+  margin-bottom: 50px;
+  padding-bottom: 30px;
+}
+
+.car-list ul li > div > div > div:first-child {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.car-list ul li > div > div > h3 {
+  text-align: center;
+  font-size: 25px;
+  color: black;
+  text-decoration: none;
+}
+
+.car-list ul li > div > div > h3 a {
+  color: black;
+  text-decoration: none;
+}
+
+.car-list ul li > div > div > h3 + div {
+  margin-left: 300px;
+}
+
+.car-list ul li > div > div > h3 + div ul li span {
+  display: flex;
+  width: 150px;
+  white-space: nowrap;
+  justify-content: space-between;
+}
+
+.car-list ul li > div > div > div:last-child {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
